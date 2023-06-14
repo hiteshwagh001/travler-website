@@ -1,0 +1,400 @@
+/* CSS for the basic structure */
+
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+/* CSS for the "Plan Your Trip" section */
+
+#search {
+    text-align: center;
+}
+
+#trip-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#trip-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#trip-form input[type="text"],
+#trip-form input[type="date"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#trip-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#trip-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* CSS for the "Popular Destinations" section */
+
+#destinations {
+    text-align: center;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.destination {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.destination img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.destination h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.destination p {
+    font-size: 14px;
+    color: #777;
+}
+/* CSS for the "Your Itinerary" section */
+
+#itinerary {
+    text-align: center;
+}
+
+#itinerary-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.itinerary-day {
+    flex: 1 1 200px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.itinerary-day h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.itinerary-items {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.itinerary-item {
+    background-color: #fff;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Draggable functionality */
+.itinerary-day {
+    cursor: move;
+}
+
+.itinerary-day:hover {
+    background-color: #e1e1e1;
+}
+/* CSS for the "Accommodation" section */
+
+.accommodation {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+}
+
+.accommodation h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.accommodation-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.accommodation-card {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+}
+
+.accommodation-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.accommodation-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.accommodation-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.accommodation-card a {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.accommodation-card a:hover {
+  background-color: #0062cc;
+}
+
+/* CSS for the "Accommodation" section */
+
+#accommodation {
+    text-align: center;
+}
+
+.accommodation-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accommodation-card {
+    flex: 1 1 300px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.accommodation-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.accommodation-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.accommodation-card p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* CSS for the "Transportation" section */
+
+#transportation {
+    text-align: center;
+}
+
+#transportation-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#transportation-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#transportation-form select,
+#transportation-form input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#transportation-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#transportation-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* CSS for the Reviews and Ratings section */
+
+#reviews {
+  text-align: center;
+  padding: 20px;
+}
+
+#review-section {
+  margin-bottom: 20px;
+}
+
+#review-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#review-form label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#review-form textarea,
+#review-form select {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#review-form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#review-form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+.review-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-weight: bold;
+}
+
+/* CSS for the Travel Tips section */
+
+#travel-tips {
+  text-align: center;
+  padding: 20px;
+}
+
+#tip-section {
+  margin-bottom: 20px;
+}
+
+.tip-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}

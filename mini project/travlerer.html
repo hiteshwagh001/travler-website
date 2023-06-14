@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+	<script src="sam.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#search">Plan Your Trip</a></li>
+                <li><a href="#destinations">Popular Destinations</a></li>
+                <li><a href="#itinerary">Your Itinerary</a></li>
+                <li><a href="#accommodation">Accommodation</a></li>
+                <li><a href="#transportation">Transportation</a></li>
+                <li><a href="#reviews">Reviews and Ratings</a></li>
+                <li><a href="#tips">Travel Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="search">
+            <section id="accommodation">
+    <h2>Accommodation</h2>
+    <form id="accommodation-form">
+        <label for="accommodation-type">Accommodation Type:</label>
+        <select id="accommodation-type" name="accommodation-type">
+            <option value="hotel">Hotel</option>
+            <option value="vacation-rental">Vacation Rental</option>
+            <option value="hostel">Hostel</option>
+        </select>
+        
+        <label for="check-in-date">Check-in Date:</label>
+        <input type="date" id="check-in-date" name="check-in-date" required>
+        
+        <label for="check-out-date">Check-out Date:</label>
+        <input type="date" id="check-out-date" name="check-out-date" required>
+        
+        <input type="submit" value="Search">
+    </form>
+</section>
+
+    <h2>Plan Your Trip</h2>
+    <form id="trip-form">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" placeholder="Enter your destination" required>
+        
+        <label for="departure-date">Departure Date:</label>
+        <input type="date" id="departure-date" name="departure-date" required>
+        
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return-date" required>
+        
+        <input type="submit" value="Search">
+    </form>
+</section>
+
+        </section>
+        
+        <section id="destinations">
+<section id="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destination-grid">
+        <div class="destination">
+            <img src="destination1.jpg" alt="Destination 1">
+            <h3>Destination 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut hendrerit ante.</p>
+        </div>
+        <div class="destination">
+            <img src="destination2.jpg" alt="Destination 2">
+            <h3>Destination 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut hendrerit ante.</p>
+        </div>
+        <div class="destination">
+            <img src="destination3.jpg" alt="Destination 3">
+            <h3>Destination 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut hendrerit ante.</p>
+        </div>
+        <!-- Add more destination items as needed -->
+    </div>
+</section>
+
+        </section>
+        
+        <section id="itinerary">
+            <section id="itinerary">
+    <h2>Your Itinerary</h2>
+    <div id="itinerary-container">
+        <div class="itinerary-day">
+            <h3>Day 1</h3>
+            <ul class="itinerary-items">
+                <li class="itinerary-item">Morning: Sightseeing</li>
+                <li class="itinerary-item">Afternoon: Museum Visit</li>
+                <li class="itinerary-item">Evening: Dinner at Local Restaurant</li>
+            </ul>
+        </div>
+        <div class="itinerary-day">
+            <h3>Day 2</h3>
+            <ul class="itinerary-items">
+                <li class="itinerary-item">Morning: Outdoor Adventure</li>
+                <li class="itinerary-item">Afternoon: Shopping</li>
+                <li class="itinerary-item">Evening: Live Music Performance</li>
+            </ul>
+        </div>
+        <!-- Add more itinerary days as needed -->
+    </div>
+</section>
+
+        </section>
+        
+        <section id="accommodation">
+            <section id="accommodation">
+    <h2>Accommodation</h2>
+    <section class="accommodation">
+  <h2>Accommodation</h2>
+  <div class="accommodation-cards">
+    <div class="accommodation-card">
+      <img src="hotel-1.jpg" alt="Hotel 1">
+      <h3>Hotel 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies metus sed velit bibendum commodo.</p>
+      <a href="#">Book now</a>
+    </div>
+    <div class="accommodation-card">
+      <img src="hotel-2.jpg" alt="Hotel 2">
+      <h3>Hotel 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies metus sed velit bibendum commodo.</p>
+      <a href="#">Book now</a>
+    </div>
+    <div class="accommodation-card">
+      <img src="hotel-3.jpg" alt="Hotel 3">
+      <h3>Hotel 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies metus sed velit bibendum commodo.</p>
+      <a href="#">Book now</a>
+    </div>
+  </div>
+</section>
+
+<section id="accommodation">
+    <h2>Accommodation</h2>
+    <div class="accommodation-cards">
+        <div class="accommodation-card">
+            <img src="hotel1.jpg" alt="Hotel 1">
+            <h3>Hotel 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="accommodation-card">
+            <img src="rental1.jpg" alt="Rental 1">
+            <h3>Rental 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="accommodation-card">
+            <img src="hostel1.jpg" alt="Hostel 1">
+            <h3>Hostel 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Add more accommodation cards as needed -->
+    </div>
+</section>
+
+
+</section>
+
+        </section>
+        
+        <section id="transportation">
+            <section id="transportation">
+    <h2>Transportation</h2>
+    <form id="transportation-form">
+        <label for="transportation-mode">Select Transportation Mode:</label>
+        <select id="transportation-mode" name="transportation-mode">
+            <option value="car">Car</option>
+            <option value="train">Train</option>
+            <option value="bus">Bus</option>
+            <option value="flight">Flight</option>
+        </select>
+        
+        <label for="departure-location">Departure Location:</label>
+        <input type="text" id="departure-location" name="departure-location" required>
+        
+        <label for="destination-location">Destination Location:</label>
+        <input type="text" id="destination-location" name="destination-location" required>
+        
+        <input type="submit" value="Search">
+    </form>
+</section>
+
+        </section>
+        
+        <section id="reviews">
+    <h2>Reviews and Ratings</h2>
+    <div id="review-section">
+        <!-- Reviews will be dynamically added here -->
+    </div>
+    <h3>Add a Review</h3>
+    <form id="review-form">
+        <label for="review-content">Review:</label>
+        <textarea id="review-content" name="review-content" required></textarea>
+        
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="">Select a Rating</option>
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </select>
+        
+        <input type="submit" value="Submit Review">
+    </form>
+</section>
+
+
+        </section>
+        
+        <section id="tips">
+            <section id="travel-tips">
+    <h2>Travel Tips</h2>
+    <div id="tip-section">
+        <!-- Travel tips will be dynamically added here -->
+    </div>
+</section>
+
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Travel Planner. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

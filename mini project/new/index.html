@@ -1,0 +1,121 @@
+<head>
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Travel Planner</h1>
+    </header>
+
+    <nav>
+        <a href="#destinations">Destinations</a>
+        <a href="#flights">Flights</a>
+        <a href="#hotels">Hotels</a>
+        <a href="#itinerary">My Itinerary</a>
+        <a href="#user">User Profile</a>
+        <a href="#login">Login</a>
+        <a href="#registration">Registration</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="destinations">
+            <h2>Destinations</h2>
+            <div class="destination-container">
+              <div class="destination">
+                <img src="bali.jpg" alt="Bali, Indonesia">
+                <h3>Bali, Indonesia</h3>
+                <p>Explore the stunning beaches, lush landscapes, and rich culture of Bali, Indonesia. Experience surfing, visit ancient temples, enjoy traditional Balinese dance performances, and indulge in local cuisine.</p>
+                <a href="#" class="btn">View Details</a>
+              </div>
+              <div class="destination">
+                <img src="paris.jpg" alt="Paris, France">
+                <h3>Paris, France</h3>
+                <p>Discover the romance and charm of Paris, France. Explore iconic landmarks like the Eiffel Tower and Louvre Museum, stroll along the Seine River, savor French cuisine, and immerse yourself in the city's artistic and cultural heritage.</p>
+                <a href="#" class="btn">View Details</a>
+              </div>
+              <div class="destination">
+                <img src="tokyo.jpg" alt="Tokyo, Japan">
+                <h3>Tokyo, Japan</h3>
+                <p>Experience the vibrant and futuristic city of Tokyo, Japan. Discover a mix of ancient traditions and modern wonders, explore bustling neighborhoods, visit historic temples, enjoy sushi and ramen, and immerse yourself in Japanese pop culture.</p>
+                <a href="#" class="btn">View Details</a>
+              </div>
+            </div>
+          </section>
+          
+
+
+          <section id="flights">
+            <h2>Flights</h2>
+            <form id="flight-search-form" method="POST" action="flight-search.php">
+              <label for="departure">Departure:</label>
+              <input type="text" id="departure" name="departure" placeholder="Enter departure location">
+          
+              <label for="destination">Destination:</label>
+              <input type="text" id="destination" name="destination" placeholder="Enter destination">
+          
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date">
+          
+              <button type="submit" class="btn">Search Flights</button>
+            </form>
+          
+            <div id="flight-search-results">
+              <h3>Flight Search Results</h3>
+              <ul>
+                <!-- Flight search results will be dynamically added here -->
+              </ul>
+            </div>
+          </section>
+          
+          
+
+        <section id="hotels">
+            <h2>Hotels</h2>
+            <!-- Hotel search form -->
+            <!-- Display hotel search results -->
+        </section>
+
+
+        <section id="itinerary">
+            <h2>My Itinerary</h2>
+            <!-- Display itinerary details and options -->
+            <!-- Display itinerary items and allow editing -->
+        </section>
+
+        <section id="user">
+            <h2>User Profile</h2>
+            <!-- Display user profile information -->
+            <!-- Allow user to manage their profile and settings -->
+        </section>
+
+        <section id="login">
+            <h2>Login</h2>
+            <!-- Login form -->
+            <!-- Display login response or redirect to user profile -->
+        </section>
+
+        <section id="registration">
+            <h2>Registration</h2>
+            <!-- Registration form -->
+            <!-- Display registration response or redirect to user profile -->
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <!-- About content -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <!-- Contact form -->
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
